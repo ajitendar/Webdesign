@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CossiePlay</title>  
+<style>
+  body {margin-left:0;
+       padding:0;
+       background-color:darkgray;
+       background-size: cover;
+       background-repeat: no-repeat;
+
+}
+#gallery{
+  margin-left:300px;
+
+}
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); margin-left:300px "width:200";
+}
+#announcement{
+  background-color: red;
+}
+#announcements{
+  background-color: brown;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+form {
+  margin:0 auto;
+  width:300px;
+  height:200px;
+  position:static;
+}
+input {
+  margin-bottom:3px;
+  padding:10px;
+  width: 100%;
+  border:1px solid #CCC
+}
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+#form-switch:checked~#register-form {
+  display:block
+}
+#form-switch:checked~#login-form {
+  display:none
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<ul>
+  <li style="font-family:italic; font-size:25px"><a class="active" href="#cosplay">CosPlay </a></li>
+  <li><a class="active" href="#about">About</a></li>
+  <li><a class="active" href="#announcements">Announcements</a></li>
+  <li><a class="active" href="#guide">GuideLines</a></li>
+  <li><a class="active" href="#gallery">Gallery</a></li>
+  <li style="float:right"><a  class="active" href="#login/register">Login/Register</a></li>
+  <li style="float:right"><a  class="active" href="#contact">Contact Us</a></li>
+</ul>
+<div id="announcement">
+</br>
+</br>
+</br>
+</br>
+ <marquee>We have some cool things happening that we want people to know about: this month you can purchase 3 drinks for the price of 2 at the bar.
+First-time party-goers get a 50% discount on entry.If you get a costume custom made, your next party entry is free if you wear that costume.
+Wear your costume in to KFC on Stanton street and you can get a free drink with a 21-piece bucket. Tell them you’ve been to CossiePlay!
+</marquee>
+</br>
+</br>
+</div>
+<div id="cosplay">
+<h1 style="font-family:italic; font-size:25px; float:left">CosPlay </h1>
+</br>
+</br>
+<p style="text-align:justify; clolor:black; font-size:20px; margin-left:20px;
+padding:25px;">Cosplay, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. Cosplayers often interact to create a subculture and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage. Any entity that lends itself to dramatic interpretation may be taken up as a subject and it is not unusual to see genders switched. Favorite sources include manga and anime, comic books and cartoons, video games, and live-action films and television series.
+
+The rapid growth in the number of people cosplaying as a hobby since 1990 has made the phenomenon a significant aspect of popular culture in Japan and some other parts of Asia and in the Western world. Cosplay events are common features of fan conventions and there are also dedicated conventions and local and international competitions, as well as social networks, websites and other forms of media centered on cosplay activities.
+Reproduced from <a href="url">https://en.wikipedia.org/wiki/Cosplay</a> .
+ </p>
+</br>
+</br>
+</div>
+<div id="about"
+</center>
+</br>
+<h2 style="font-family:italic; font-size:25px; float:left">About </h2>
+</br>
+</br>
+<p style="text-align:justify; clolor:black; font-size:20px; margin-left:20px; padding:25px;">CossiePlay is a family-run business, operating in Hulkstown since 2012. We create outstanding custom-made costumes. Cosplayers can order any kind of costume - from simple Spiderman or elf costumes right up to costumes including advanced features like armour, animatronics, realistic weaponry and working force fields. Depending on the difficulty, costumes take between 1 and 50 weeks and cost between $10 and $10,000.
+We buy and sell second-hand costumes (a price list is available) as well.
+On the first Saturday of every month we hold a “CossiePlay Party” at the town hall. Entry is $15 for adults, $10 for ages 6-17 and kids under 6 are free. Each entry includes one non-alcoholic drink and a glow stick. Parties start at 6pm and run until 11pm. There is always a live DJ at the party (who takes requests) and dancing is common (but not required)
+ </p>
+</div>
+</br>
+</br>
+<div id="price list">
+<h3 style="font-family:italic; font-size:25px; float:left">
+  Price List
+</h3>
+</br>
+<table>
+  <tr>
+    <th>Costume</th>
+    <th>Size</th>
+    <th>Prize</th>
+  </tr>
+  <tr>
+    <td>Spiderman</td>
+    <td>12</td>
+    <td>$49</td>
+  </tr>
+  <tr>
+    <td>Elf</td>
+    <td>16</td>
+    <td>$35</td>
+  </tr>
+  <tr>
+    <td>Darth Vader</td>
+    <td>M</td>
+    <td>$149</td>
+  </tr>
+  <tr>
+    <td>Iron Man(with rocket boots)</td>
+    <td>M</td>
+    <td>$2,500</td>
+  </tr>
+  <tr>
+    <td>Bayonetta</td>
+    <td>8</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Diablo lll-Demon Hunter</td>
+    <td>10</td>
+    <td>$250</td>
+  </tr>
+  <tr>
+    <td>Harley Quinn</td>
+    <td>18</td>
+    <td>$125</td>
+  </tr>
+  <tr>
+    <td>Metroid-Samus Aran</td>
+    <td>L</td>
+    <td>$850</td>
+  </tr>
+  <tr>
+    <td>Peter Pan</td>
+    <td>XS</td>
+    <td>$49</td>
+  </tr>
+  <tr>
+    <td>Princess Leia(White)</td>
+    <td>10</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Spock(Star Trek)</td>
+    <td>S</td>
+    <td>$1,235</td>
+  </tr>
+</table>
+</div>
+</br>
+</br>
+<div id="announcements"
+</center>
+</br>
+<h2 style="font-family:italic; font-size:25px; float:left">Announcements </h2>
+</br>
+</br>
+<p style="text-align:justify; clolor:black; font-size:20px; margin-left:20px; padding:25px;">
+   <marquee direction = "up">We have some cool things happening that we want people to know about: this month you can purchase 3 drinks for the price of 2 at the bar.
+First-time party-goers get a 50% discount on entry
+If you get a costume custom made, your next party entry is free if you wear that costume.
+Wear your costume in to KFC on Stanton street and you can get a free drink with a 21-piece bucket. Tell them you’ve been to CossiePlay!
+</marquee>
+ </p>
+ </div>
+ </br>
+
+<div id="guide">
+<h3 style="font-family:italic; font-size:25px; float:left">GuideLines</h3>
+</br>
+</br>
+</br>
+<p style="text-align:justify; clolor:black; font-size:20px;  margin-left:20px; padding:25px;">CossiePlay party-goers party at their own risk and are responsible for their own safety. </br> Check with your doctor before you party hard. </br>
+Party fees must be paid at the door. </br> Cash or EFTPOS accepted. </br> Credit card payments attract a 2% surcharge. </br> Alcohol is served at the bar to over 18s only. </br> No intoxicated persons will be served, but will be escorted to a taxi – paid by the party-goer. </p>
+</div>
+<div id="gallery">
+<h4 style="font-family:italic; font-size:25px; margin-left:-300px">Gallery</h4>
+</br>
+</br>
+</br>
+</br>
+<img src="sewing-hands-1418016.jpg" alt="sewing hands" width="200" height="200">
+
+<img src="alice-in-wonderland-872612_1280.jpg" alt="alice" width="200" height="200">
+
+<img src="book-fair-678264_1280.jpg" alt="book-fair" width="200" height="200">
+
+<img src="boromir-4-1478698.jpg" alt="boromir" width="200" height="200">
+</br>
+<img src="devils-570861_1280.jpg" alt="devils" width="200" height="200">
+<img src="olaf-630522_1280.jpg" alt="olaf" width="200" height="200">
+<img src="party-1506740-640x480.jpg" alt="party" width="200" height="200">
+<img src="we-re-rabbits-1439192-1279x850.jpg" alt="rabbits" width="200" height="200">
+</br>
+
+</div>
+</br>
+</br>
+<div id="login/register">
+<h5 style="font-family:italic; font-size:25px;margin-left:15px; ">Login/Register</h5>
+<input type='checkbox' id='form-switch'>
+<form id='login-form' action="" method='post' style="margin-left:15px";>
+  <input type="text" placeholder="Username" required>
+  <input type="password" placeholder="Password" required>
+  <button type='submit'>Login</button>
+  <label for='form-switch'><span>Register</span></label>
+</form>
+<form id='register-form' action="" method='post'>
+  <input type="text" placeholder="Username" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+  <input type="password" placeholder="Re Password" required>
+  <input type="phone" placeholder="Phone" required>
+  <input type="no.of.members" placeholder="No.of Members" required>
+  <button type='submit'>Register</button>
+  <label for='form-switch'>Already Member ? Sign In Now..</label>
+</form>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div>
+  <table>
+  <tr>
+<td id="contact"  width="50%"style="background-color:white" >
+
+<div style="margin-top:-190px" >
+  <img src="contact-us-1024x496.jpg" alt="contact" width="100%"  height="100px">
+</br>
+</br>
+
+
+
+<h style="font-family:italic; font-size:40px;margin-left:15px;";> Contact</h>
+<p style="margin-left:25px">Phone:07 4771 1234</br>
+fax: 07-4771 1235</br>
+address: 4 Stanton Avenue, Hulkstwon</br>
+ cossieplay@ gmail.com.</br>
+</p>
+</div>
+</td>
+  <td id="map" style=" width:600px;height:400px;background-color:white" width="50%"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.779950814189!2d153.03410331407028!3d-27.476109223551575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI4JzM0LjAiUyAxNTPCsDAyJzEwLjciRQ!5e0!3m2!1sen!2sau!4v1513791827396" width="600" height="450" frameborder="0" ></iframe></td>
+
+</tr>
+
+</table>
+</div>
+<footer font-size="18px" align="center">
+CosPlay@2017
+</footer>
+</body>
+</html>
